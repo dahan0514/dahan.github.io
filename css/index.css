@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#header {
+    width: 100%;
+    height: 100%;
+    background:
+        linear-gradient(to right, rgba(70, 130, 180, 0.9), rgba(70, 130, 180, 0.5)),
+        url(/img/desk-593327_1280.jpg);
+    background-size: cover; 
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#header_top {
+    position: fixed;
+    width: 100%;
+}
+
+#header_top_box {
+    width: 1080px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#header_top_box > div {
+    width: 100%;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'GmarketSansMedium', sans-serif;
+}
+
+.title > a {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu > div > a{
+    margin:0 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: 'GmarketSansMedium', sans-serif;
+}
+
+#header_middle {
+    text-align: center;
+    padding: 100px 0 ;
+}
+
+.middle_title {
+    font-size: 55px;
+    margin-bottom: 30px;
+    line-height: 1.7;
+    color: white;
+    font-family: 'SBAggroB', sans-serif;
+}
+
+.middle_dis {
+    font-size: 20px;
+    line-height: 1.8;
+    color: white;
+    font-family: 'GmarketSansMedium', sans-serif;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#body {
+    width: 100%;
+}
+
+.inner_box {
+    width: 1080px;
+    height: 300px;
+    border: 1px solid skyblue;
+}
+
+#about_me_box {
+    background-color: white;
+}
+
+#skills_box{
+    background-color: greenyellow;
+}
+
+#archiving_box{
+    background-color: aqua;
+}
+
+#projects_box{
+    background-color: cornflowerblue;
+}
+
+#footer {
+    width: 100%;
+    height: 200px;
+    background-color: black;
+}
