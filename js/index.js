@@ -11,3 +11,9 @@ window.addEventListener("scroll", function () {
     // 배경색 적용
     topMenu.style.backgroundColor = "rgba(68, 68, 68, " + opacity + ")"
 });
+
+function goToScroll(name) {
+    var location = document.querySelector("." + name).offsetTop - document.getElementById("header_top").offsetHeight;
+    window.scrollTo({ top: location, behavior: 'smooth' });
+}
+  

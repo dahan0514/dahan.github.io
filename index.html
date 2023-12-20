@@ -14,10 +14,10 @@
 			<div id="header_top_box">
 				<div class="title"><a href="#">HDH's Portfolio</a></div>
 				<div class="menu">
-					<div><a href="#">About me</a></div>
-					<div><a href="#">Skills</a></div>
-					<div><a href="#">Archiving</a></div>
-					<div><a href="#">Projects</a></div>
+					<div onclick="goToScroll('aboutme')">AboutMe</div>
+					<div onclick="goToScroll('skills')">Skills</div>
+					<div onclick="goToScroll('archiving')">Archiving</div>
+					<div onclick="goToScroll('projects')">Projects</div>
 				</div>
 			</div>
 		</div>
@@ -36,27 +36,49 @@
 	</div>
 	
 	<div id="body">
-		<div id="about_me_box">
+		<div id="about_me_box" class="aboutme">
 			<div id="about_me" class="inner_box">
-				
+				<div id="about_me_title" class="body_title"><a onclick="goToScroll('aboutme')">ABOUT ME</a></div>
+				<div class="about_me_list">
+					<div>
+						<div class="ab_bold_text">이름</div>
+						<div class="ab_text">홍다한</div>
+					</div>
+					<div>
+						<div class="ab_bold_text">생년월일</div>
+						<div class="ab_text">2000.05.14</div>
+					</div>
+					<div>
+						<div class="ab_bold_text">주소지</div>
+						<div class="ab_text">경기도 과천시</div>
+					</div>
+					<div>
+						<div class="ab_bold_text">연락처</div>
+						<div class="ab_text">010-6649-0258</div>
+					</div>
+					<div>
+						<div class="ab_bold_text">이메일</div>
+						<div class="ab_text">hongdh0514@gmail.com</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		
-		<div id="skills_box">
+		<div id="skills_box" class="skills">
 			<div id="skills" class="inner_box">
-				
+				<div id="skills_title" class="body_title"><a onclick="goToScroll('skills')">SKILLS</a></div>
 			</div>
 		</div>
 		
-		<div id="archiving_box">
+		<div id="archiving_box" class="archiving">
 			<div id="archiving" class="inner_box">
-				
+				<div id="archiving_title" class="body_title"><a onclick="goToScroll('archiving')">ARCHIVING</a></div>
 			</div>
 		</div>
 		
-		<div id="projects_box">
+		<div id="projects_box" class="projects">
 			<div id="projects" class="inner_box">
-				
+				<div id="projects_title" class="body_title"><a onclick="goToScroll('projects')">PROJECTS</a></div>
 			</div>
 		</div>
 	</div>
