@@ -13,6 +13,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
 * {
     margin: 0 auto;
     scroll-behavior: smooth;
@@ -108,7 +115,12 @@ a {
 .inner_box {
     width: 1080px;
     /* 지워야 함!!!! */
-    padding: 50px 0;
+    padding: 50px;
+}
+
+#about_me {
+    padding: 0;
+    padding-top: 50px;
 }
 
 #about_me_box {
@@ -148,7 +160,14 @@ a {
 
 .about_me_list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin-top: 50px;
+}
+
+.ab_text_box {
+    width: 33%;
+    margin-bottom: 50px;
 }
 
 .ab_bold_text {
@@ -161,4 +180,83 @@ a {
 
 .ab_text {
     text-align: center;
+    font-family: 'SUITE-Regular', sans-serif;
+    font-size: 25px;
+}
+
+#icon_person {
+    width: 80px;
+    height: 80px;
+    background: url(../img/icon_person.png);
+    background-size: cover; 
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+
+#icon_callender {
+    width: 80px;
+    height: 80px;
+    background: url(../img/icon_callender.png);
+    background-size: cover; 
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+
+#icon_addr {
+    width: 80px;
+    height: 80px;
+    background: url(../img/icon_addr.png);
+    background-size: cover; 
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+
+#icon_phone {
+    width: 80px;
+    height: 80px;
+    background: url(../img/icon_phone.png);
+    background-size: cover; 
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+
+#icon_message {
+    width: 80px;
+    height: 80px;
+    background: url(../img/icon_message.png);
+    background-size: cover; 
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+
+.skills_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills_list {
+    width: 33%;
+    height: 100%;
+    text-align: center;
+    border-radius: 30px;
+    margin-top: 50px;
+}
+
+.skills_title {
+    font-family: 'GmarketSansMedium', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.skills_content {
+    text-align: center;
+    font-family: 'SUITE-Regular', sans-serif;
+    font-size: 25px;
 }
