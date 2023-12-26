@@ -119,8 +119,8 @@ a {
 }
 
 #about_me {
-    padding: 0;
-    padding-top: 50px;
+    padding: 50px;
+    padding-bottom: 40px;
 }
 
 #about_me_box {
@@ -149,6 +149,12 @@ a {
     text-align: center;
 }
 
+.a_title {
+    border-bottom: 5px solid;
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+    padding: 5px;
+}
+
 .body_title > a{
     text-align: center;
     color: white;
@@ -158,16 +164,27 @@ a {
     cursor: pointer;
 }
 
-.about_me_list {
+.about_me_list_top {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex: 3;
+    box-sizing: border-box;
     margin-top: 50px;
 }
 
+.about_me_list_bottom {
+    display: flex;
+    flex: 2;
+    box-sizing: border-box;
+}
+
 .ab_text_box {
-    width: 33%;
-    margin-bottom: 50px;
+    flex: 1;
+    margin: 10px;
+    border: 5px solid black;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .ab_bold_text {
@@ -176,12 +193,14 @@ a {
     font-size: 30px;
     text-align: center;
     margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);   
 }
 
 .ab_text {
     text-align: center;
     font-family: 'SUITE-Regular', sans-serif;
     font-size: 25px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 #icon_person {
@@ -237,15 +256,19 @@ a {
 .skills_box {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    /* align-items: flex-start; */
 }
 
 .skills_list {
-    width: 33%;
-    height: 100%;
+    width: 25%;
+    margin-top: 50px;
     text-align: center;
     border-radius: 30px;
-    margin-top: 50px;
+    padding: 20px;
+    border: 5px solid black;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .skills_title {
@@ -253,10 +276,13 @@ a {
     font-weight: bold;
     font-size: 30px;
     margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);   
 }
 
 .skills_content {
     text-align: center;
     font-family: 'SUITE-Regular', sans-serif;
     font-size: 25px;
+    align-items: center; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);   
 }
