@@ -85,7 +85,7 @@
 			<div id="skills" class="inner_box">
 				<div id="skills_title" class="body_title"><a class="a_title" onclick="goToScroll('skills')">SKILLS</a></div>
 				<div class="skills_box">
-					<div class="skills_list">
+					<div class="box">
 						<div class="skills_title">Backend</div>
 						<div class="skills_content">
 							<br>
@@ -96,7 +96,7 @@
 							<br>
 						</div>
 					</div>
-					<div class="skills_list">
+					<div class="box">
 						<div class="skills_title">Frontend</div>
 						<div class="skills_content">
 							<div>Javascript</div>
@@ -107,7 +107,7 @@
 							<div>React</div>
 						</div>
 					</div>
-					<div class="skills_list">
+					<div class="box">
 						<div class="skills_title">Collaborations</div>
 						<div class="skills_content">
 							<br>
@@ -118,7 +118,7 @@
 							<br>
 						</div>
 					</div>
-					<div class="skills_list">
+					<div class="box">
 						<div class="skills_title">Sever</div>
 						<div class="skills_content">
 							<br>
@@ -126,7 +126,7 @@
 							<br>
 						</div>
 					</div>
-					<div class="skills_list">
+					<div class="box">
 						<div class="skills_title">DB</div>
 						<div class="skills_content">
 							<br>
@@ -134,7 +134,7 @@
 							<br>
 						</div>
 					</div>
-					<div class="skills_list">
+					<div class="box">
 						<div class="skills_title">Tools</div>
 						<div class="skills_content">
 							<div>intelliJ</div>
@@ -149,11 +149,84 @@
 		<div id="archiving_box" class="archiving">
 			<div id="archiving" class="inner_box">
 				<div id="archiving_title" class="body_title"><a class="a_title" onclick="goToScroll('archiving')">ARCHIVING</a></div>
+				<div class="skills_box">
+					<div class="box archiving_context_box" onclick="redirectToURL('https://github.com/dahan0514')">
+						<div class="skills_title">Github</div>
+						<div class="skills_content">
+							<a class="style_a">https://github.com/dahan0514</a>
+							<p class="mb20"><b>소스 코드 저장소</b>입니다.</p>
+							<ul>
+								<li>코딩 연습을 위해 작성한 소스 코드</li>
+								<li>코딩 과제를 위해 작성한 소스 코드</li>
+								<li>프로젝트를 위해 작성한 소스 코드</li>
+							</ul>
+						</div>
+					</div>
+					<div class="box archiving_context_box" onclick="redirectToURL('https://naver.com')">
+						<div class="skills_title">TISTORY</div>
+						<div class="skills_content">
+							<a href="https://github.com/dahan0514" target="_blank" class="style_a">https://github.com/dahan0514</a>
+							<p class="mb20"><b>공부를 위한 블로그</b>입니다.</p>
+							<ul>
+								<li>공부한 것을 복습하고 정리</li>
+								<li>나에게 더 필요한 부분을 공부하고 기록</li>
+								<li>꾸준함과 성실함을 기르기 위한 공간</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		
 		<div id="projects_box" class="projects">
 			<div id="projects" class="inner_box">
 				<div id="projects_title" class="body_title"><a class="a_title" onclick="goToScroll('projects')">PROJECTS</a></div>
+				<div class="skills_box">
+					<div class="box projects_context_box">
+						<div class="skills_title">이웃 사촌</div>
+						<p class="project_period">2023.09.07 - 2023.09.27 (5인 팀 프로젝트)</p>
+						<div class="img_box" id="img_box1">
+							<div onclick="changePrevImage(1)" id="left_arrow_icon1" class="left_arrow_icon"></div>
+							<div onclick="projectDescription(1)" class="mb20" id="image-container1"></div>
+							<div onclick="changeImage(1)" id="right_arrow_icon1" class="right_arrow_icon"></div>
+						</div>
+						<div class="projectDescription" id="description1" onclick="showImgBox(1)">
+							<div class="left_description">설명설명설명설명설명설명설명설명설명설명</div>
+							<div>
+								<ul class="descriptionUl">
+									<li><b>주요 기능</b></li>
+									<li><b>Github</b></li>
+									<li><b>URL</b></li>
+									<li><b>Frontend</b></li>
+									<li><b>Backend</b></li>
+									<li><b>Database</b></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					<div class="box projects_context_box">
+						<div class="skills_title">Fithub</div>
+						<p class="project_period">2023.10.18 - 2023.11.24 (6인 팀 프로젝트)</p>
+						<div class="img_box" id="img_box2">
+							<div onclick="changePrevImage(2)" id="left_arrow_icon2" class="left_arrow_icon"></div>
+							<div onclick="projectDescription(2)" class="mb20" id="image-container2"></div>
+							<div onclick="changeImage(2)" id="right_arrow_icon2" class="right_arrow_icon"></div>
+						</div>
+						<div class="projectDescription" id="description2" onclick="showImgBox(2)">asdf</div>
+					</div>
+					
+					<div class="box projects_context_box">
+						<div class="skills_title">포트폴리오 웹 사이트</div>
+						<p class="project_period">2023.12 (1인 개인 프로젝트)</p>
+						<div class="img_box" id="img_box3">
+							<div onclick="changePrevImage(3)" id="left_arrow_icon3" class="left_arrow_icon"></div>
+							<div onclick="projectDescription(3)" class="mb20" id="image-container3"></div>
+							<div onclick="changeImage(3)" id="right_arrow_icon3" class="right_arrow_icon"></div>
+						</div>
+						<div class="projectDescription" id="description3" onclick="showImgBox(3)">asdf</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

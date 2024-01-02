@@ -159,7 +159,7 @@ a {
     text-align: center;
     color: white;
     font-family: 'SBAggroB', sans-serif;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);   
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);   
     font-size: 40px;
     cursor: pointer;
 }
@@ -260,7 +260,7 @@ a {
     /* align-items: flex-start; */
 }
 
-.skills_list {
+.box {
     width: 25%;
     margin-top: 50px;
     text-align: center;
@@ -285,4 +285,124 @@ a {
     font-size: 25px;
     align-items: center; 
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);   
+}
+
+.archiving_context_box {
+    width: 43.6%;
+    cursor: pointer;
+}
+
+.style_a {
+    color: blue;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.archiving_context_box:hover .style_a {
+    text-decoration: underline; /* 마우스를 올렸을 때 밑줄 표시 */
+}
+
+ul {
+    list-style-position: inside; /* 목록 마커 위치를 내부로 설정 */
+}
+
+li {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.projects_context_box {
+    width: 100%;
+}
+
+.project_period {
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.img_box {
+    display: flex;
+}
+
+#image-container1 {
+    width: 70%;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+#image-container2 {
+    width: 70%;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+#image-container3 {
+    width: 70%;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.left_arrow_icon {
+    width: 100px;
+    height: 100px;
+    background: url(../img/left_arrow_icon.png);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    margin-top: 245px;
+}
+
+.right_arrow_icon {
+    width: 100px;
+    height: 100px;
+    background: url(../img/right_arrow_icon.png);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    margin-top: 245px;
+}
+
+.projectDescription {
+    display: none;
+    cursor: pointer;
+}
+
+.descriptionUl {
+    margin-left: 50px;
+}
+
+.descriptionUl li {
+    list-style-type: none;
+    position: relative;
+    padding-left: 30px;
+    font-family: 'GmarketSansMedium', sans-serif;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.descriptionUl li::before {
+    content: ""; /* 가상 요소의 내용 없음 */
+    background-image: url('../img/icon_check.png'); /* 마커 이미지 지정 */
+    background-size: contain; /* 이미지를 가득 채우되 비율 유지 */
+    background-repeat: no-repeat; /* 이미지 반복 제거 */
+    width: 20px; /* 마커의 가로 크기 */
+    height: 20px; /* 마커의 세로 크기 */
+    display: inline-block; /* 인라인 블록 요소로 설정하여 텍스트와 수직 정렬 */
+    position: absolute; /* 부모 위치 기준으로 위치 조절 */
+    left: 0; /* 왼쪽 정렬 */
+    top: 50%; /* 수직 정렬을 위해 부모의 50% 지점에 위치 */
+    transform: translateY(-50%); /* 수직 정렬 조절 */
 }
