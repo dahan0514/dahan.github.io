@@ -8,11 +8,12 @@
 	<link rel="stylesheet" href="./css/index.css" />
 </head>
 <body>
+	<div onclick="scrollToTop()" id="scrollToTopBtn"></div>
 
 	<div id="header">
 		<div id="header_top">
 			<div id="header_top_box">
-				<div class="title"><a href="#">HDH's Portfolio</a></div>
+				<div class="title"><a onclick="scrollToTop()">HDH's Portfolio</a></div>
 				<div class="menu">
 					<div onclick="goToScroll('aboutme')">AboutMe</div>
 					<div onclick="goToScroll('skills')">Skills</div>
@@ -182,24 +183,47 @@
 			<div id="projects" class="inner_box">
 				<div id="projects_title" class="body_title"><a class="a_title" onclick="goToScroll('projects')">PROJECTS</a></div>
 				<div class="skills_box">
+
 					<div class="box projects_context_box">
 						<div class="skills_title">이웃 사촌</div>
-						<p class="project_period">2023.09.07 - 2023.09.27 (5인 팀 프로젝트)</p>
+						<p class="project_period">2023.09.07 - 2023.09.27 (5人 팀 프로젝트)</p>
+						<p class="explain_text" id="explain_text1">*이미지 클릭 시 확대&축소 / 더블클릭 시 설명*</p>
 						<div class="img_box" id="img_box1">
 							<div onclick="changePrevImage(1)" id="left_arrow_icon1" class="left_arrow_icon"></div>
-							<div onclick="projectDescription(1)" class="mb20" id="image-container1"></div>
+							<div onclick="toggleZoom(1)" ondblclick="projectDescription(1)" class="mb20 image_container" id="image-container1"></div>
 							<div onclick="changeImage(1)" id="right_arrow_icon1" class="right_arrow_icon"></div>
 						</div>
 						<div class="projectDescription" id="description1" onclick="showImgBox(1)">
-							<div class="left_description">설명설명설명설명설명설명설명설명설명설명</div>
 							<div>
 								<ul class="descriptionUl">
-									<li><b>주요 기능</b></li>
-									<li><b>Github</b></li>
-									<li><b>URL</b></li>
-									<li><b>Frontend</b></li>
-									<li><b>Backend</b></li>
-									<li><b>Database</b></li>
+									<li>
+										<b>주요 기능</b>
+										1인 가구를 위한 커뮤니티
+									</li>
+									<li>
+										<b>담당 기능</b>
+										자유게시판, 나눔게시판
+									</li>
+									<li>
+										<b>Github</b>
+										<a href="" target="_blank" class="style_b"></a>
+									</li>
+									<li>
+										<b>Frontend</b>
+										Javascript, HTML, CSS
+									</li>
+									<li>
+										<b>Backend</b>
+										JAVA, JSP & Servlet
+									</li>
+									<li>
+										<b>Database</b>
+										MySQL										
+									</li>
+									<li onclick="test()">
+										<b>자세히 보기</b>
+										클릭!										
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -207,24 +231,80 @@
 					
 					<div class="box projects_context_box">
 						<div class="skills_title">Fithub</div>
-						<p class="project_period">2023.10.18 - 2023.11.24 (6인 팀 프로젝트)</p>
+						<p class="project_period">2023.10.18 - 2023.11.24 (6人 팀 프로젝트)</p>
+						<p class="explain_text" id="explain_text2">*이미지 클릭 시 확대&축소 / 더블클릭 시 설명*</p>
 						<div class="img_box" id="img_box2">
 							<div onclick="changePrevImage(2)" id="left_arrow_icon2" class="left_arrow_icon"></div>
-							<div onclick="projectDescription(2)" class="mb20" id="image-container2"></div>
+							<div onclick="toggleZoom(2)" ondblclick="projectDescription(2)" class="mb20 image_container" id="image-container2"></div>
 							<div onclick="changeImage(2)" id="right_arrow_icon2" class="right_arrow_icon"></div>
 						</div>
-						<div class="projectDescription" id="description2" onclick="showImgBox(2)">asdf</div>
+						<div class="projectDescription" id="description2" onclick="showImgBox(2)">
+							<div>
+								<ul class="descriptionUl">
+									<li>
+										<b>주요 기능</b>
+										음식/운동 칼로리 검색, 트레이너-유저 매칭, 챌린지
+									</li>
+									<li>
+										<b>담당 기능</b>
+										관리자 마이페이지, 쪽지 보내기, 문의하기, 게시글 신고하기, 간단 BMI 측정, 보건소 찾기
+									</li>
+									<li>
+										<b>Github</b>
+										<a href="https://github.com/dahan0514/Fithub" target="_blank" class="style_b">https://github.com/dahan0514/Fithub</a>
+									</li>
+									<li>
+										<b>Frontend</b>
+										Javascript, JQuery, HTML, CSS, Ajax
+									</li>
+									<li>
+										<b>Backend</b>
+										JAVA, Spring Boot
+									</li>
+									<li>
+										<b>Database</b>
+										MySQL										
+									</li>
+									<li onclick="test()">
+										<b>자세히 보기</b>
+										클릭!										
+									</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 					
 					<div class="box projects_context_box">
 						<div class="skills_title">포트폴리오 웹 사이트</div>
-						<p class="project_period">2023.12 (1인 개인 프로젝트)</p>
+						<p class="project_period">2023.12 (1人 개인 프로젝트)</p>
+						<p class="explain_text" id="explain_text3">*이미지 클릭 시 확대&축소 / 더블클릭 시 설명*</p>
 						<div class="img_box" id="img_box3">
 							<div onclick="changePrevImage(3)" id="left_arrow_icon3" class="left_arrow_icon"></div>
-							<div onclick="projectDescription(3)" class="mb20" id="image-container3"></div>
+							<div onclick="toggleZoom(3)" ondblclick="projectDescription(3)" class="mb20 image_container" id="image-container3"></div>
 							<div onclick="changeImage(3)" id="right_arrow_icon3" class="right_arrow_icon"></div>
 						</div>
-						<div class="projectDescription" id="description3" onclick="showImgBox(3)">asdf</div>
+						<div class="projectDescription" id="description3" onclick="showImgBox(3)">
+							<div>
+								<ul class="descriptionUl">
+									<li>
+										<b>주요 기능</b>
+										간단한 자기소개, 인적 사항, 기술 스택, GitHub 및 티스토리 링크, 프로젝트 경험
+									</li>
+									<li>
+										<b>Github</b>
+										<a href="https://github.com/dahan0514/portfolio" target="_blank" class="style_b">https://github.com/dahan0514/portfolio</a>
+									</li>
+									<li>
+										<b>URL</b>
+										<a href="https://dahan0514.github.io/portfolio/" target="_blank" class="style_b">https://dahan0514.github.io/portfolio/</a>
+									</li>
+									<li>
+										<b>Frontend</b>
+										Javascript, HTML, CSS
+									</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -232,7 +312,7 @@
 	</div>
 
 	<div id="footer">
-
+		<p class="footer_text">© 2023. Hong Da Han. All rights reserved.</p>
 	</div>
 <script src="./js/index.js"></script>
 </body>
