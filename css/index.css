@@ -291,7 +291,8 @@ a {
 }
 
 .archiving_context_box {
-    width: 43.6%;
+    /* width: 43.6%; */
+    width: 50%;
     cursor: pointer;
 }
 
