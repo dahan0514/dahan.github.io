@@ -84,12 +84,24 @@ initializeImage(2); // 두 번째 박스 초기화
 initializeImage(3); // 세 번째 박스 초기화
 
 function projectDescription(boxIndex) {
+    const text_btn = document.getElementById(`text_btn${boxIndex}`);
+    const image_btn = document.getElementById(`image_btn${boxIndex}`);
+
+    text_btn.style.display = `none`;
+    image_btn.style.display = `block`;
+
     imgBoxContainers[boxIndex - 1].style.display = `none`;
     descriptionContainers[boxIndex - 1].style.display = `block`;
     explainTextContainers[boxIndex - 1].innerHTML = `*설명 클릭 시 이미지*`;
 }
 
 function showImgBox(boxIndex) {
+    const text_btn = document.getElementById(`text_btn${boxIndex}`);
+    const image_btn = document.getElementById(`image_btn${boxIndex}`);
+
+    text_btn.style.display = `block`;
+    image_btn.style.display = `none`;
+
     imgBoxContainers[boxIndex - 1].style.display = `flex`;
     descriptionContainers[boxIndex - 1].style.display = `none`;
     explainTextContainers[boxIndex - 1].innerHTML = `*이미지 클릭 시 확대&축소 / 더블클릭 시 설명*`;
@@ -136,13 +148,12 @@ function toggleZoom(boxIndex) {
 }
 
 function allowDrop(event) {
-  event.preventDefault();
+    event.preventDefault();
 }
 
 function drop(boxIndex) {
-
-  imgBoxContainers[boxIndex - 1].style.display = `none`;
-  descriptionContainers[boxIndex - 1].style.display = `block`;
+    imgBoxContainers[boxIndex - 1].style.display = `none`;
+    descriptionContainers[boxIndex - 1].style.display = `block`;
 }
 
 function test() {

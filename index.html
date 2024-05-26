@@ -29,9 +29,7 @@
 			</div>
 			<div class="middle_dis">
 				안녕하세요.<br>
-				신입 웹 개발자 홍다한입니다.<br>
-				< 열정 & 배려 & 긍정 > <br>
-				저의 장점입니다.
+				신입 웹 개발자 홍다한입니다.
 			</div>
 		</div>
 	</div>
@@ -187,13 +185,14 @@
 					<div class="box projects_context_box">
 						<div class="skills_title">이웃 사촌</div>
 						<p class="project_period">2023.09.07 - 2023.09.27 (5人 팀 프로젝트)</p>
-						<p class="explain_text" id="explain_text1">*이미지 클릭 시 확대&축소 / 더블클릭 시 설명*</p>
+						<div class="text_btn" onclick="projectDescription(1)" id="text_btn1"></div>
+						<div class="image_btn" onclick="showImgBox(1)" id="image_btn1"></div>
 						<div class="img_box" id="img_box1">
 							<div onclick="changePrevImage(1)" id="left_arrow_icon1" class="left_arrow_icon"></div>
-							<div onclick="toggleZoom(1)" ondblclick="projectDescription(1)" class="mb20 image_container" id="image-container1"></div>
+							<div class="mb20 image_container" id="image-container1"></div>
 							<div onclick="changeImage(1)" id="right_arrow_icon1" class="right_arrow_icon"></div>
 						</div>
-						<div class="projectDescription" id="description1" onclick="showImgBox(1)">
+						<div class="projectDescription" id="description1">
 							<div>
 								<ul class="descriptionUl">
 									<li>
@@ -220,10 +219,6 @@
 										<b>Database</b>
 										MySQL										
 									</li>
-									<!-- <li onclick="test()">
-										<b>자세히 보기</b>
-										클릭!										
-									</li> -->
 								</ul>
 							</div>
 						</div>
@@ -232,13 +227,14 @@
 					<div class="box projects_context_box">
 						<div class="skills_title">Fithub</div>
 						<p class="project_period">2023.10.18 - 2023.11.24 (6人 팀 프로젝트)</p>
-						<p class="explain_text" id="explain_text2">*이미지 클릭 시 확대&축소 / 더블클릭 시 설명*</p>
+						<div class="text_btn" onclick="projectDescription(2)" id="text_btn2"></div>
+						<div class="image_btn" onclick="showImgBox(2)" id="image_btn2"></div>
 						<div class="img_box" id="img_box2">
-							<div onclick="changePrevImage(2)" id="left_arrow_icon2" class="left_arrow_icon"></div>
-							<div onclick="toggleZoom(2)" ondblclick="projectDescription(2)" class="mb20 image_container" id="image-container2"></div>
-							<div onclick="changeImage(2)" id="right_arrow_icon2" class="right_arrow_icon"></div>
+							<div onclick="changePrevImage(2)" id="left_arrow_icon1" class="left_arrow_icon"></div>
+							<div class="mb20 image_container" id="image-container2"></div>
+							<div onclick="changeImage(2)" id="right_arrow_icon1" class="right_arrow_icon"></div>
 						</div>
-						<div class="projectDescription" id="description2" onclick="showImgBox(2)">
+						<div class="projectDescription" id="description2">
 							<div>
 								<ul class="descriptionUl">
 									<li>
@@ -277,13 +273,14 @@
 					<div class="box projects_context_box">
 						<div class="skills_title">포트폴리오 웹 사이트</div>
 						<p class="project_period">2023.12 (1人 개인 프로젝트)</p>
-						<p class="explain_text" id="explain_text3">*이미지 클릭 시 확대&축소 / 더블클릭 시 설명*</p>
+						<div class="text_btn" onclick="projectDescription(3)" id="text_btn3"></div>
+						<div class="image_btn" onclick="showImgBox(3)" id="image_btn3"></div>
 						<div class="img_box" id="img_box3">
-							<div onclick="changePrevImage(3)" id="left_arrow_icon3" class="left_arrow_icon"></div>
-							<div onclick="toggleZoom(3)" ondblclick="projectDescription(3)" class="mb20 image_container" id="image-container3"></div>
-							<div onclick="changeImage(3)" id="right_arrow_icon3" class="right_arrow_icon"></div>
+							<div onclick="changePrevImage(3)" id="left_arrow_icon1" class="left_arrow_icon"></div>
+							<div class="mb20 image_container" id="image-container3"></div>
+							<div onclick="changeImage(3)" id="right_arrow_icon1" class="right_arrow_icon"></div>
 						</div>
-						<div class="projectDescription" id="description3" onclick="showImgBox(3)">
+						<div class="projectDescription" id="description3">
 							<div>
 								<ul class="descriptionUl">
 									<li>
